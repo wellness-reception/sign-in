@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Wellness Visitor App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Wellness Visitor Sign-In</h1>
+    <form id="visitorForm">
+      <input type="text" id="name" placeholder="Enter Name" required>
+      <input type="text" id="surname" placeholder="Enter Surname" required>
+      <select id="role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="Student">Student</option>
+        <option value="Staff">Staff</option>
+      </select>
+      <input type="text" id="reason" placeholder="Reason for Visit" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
